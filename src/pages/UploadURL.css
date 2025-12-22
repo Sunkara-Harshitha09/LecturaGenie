@@ -1,0 +1,8 @@
+.url-page { display:flex; justify-content:center; align-items:center; min-height:100vh; padding:60px 20px; background:linear-gradient(135deg,#eaf3ff,#fff); }
+.url-card { background:#fff; border-radius:16px; padding:36px; width:100%; max-width:520px; box-shadow:0 6px 18px rgba(0,0,0,0.08); border:1px solid #e5e7eb; text-align:center; }
+.url-card h2 { color:#0a66c2; margin-bottom:8px; font-size:1.6rem; }
+.url-card p.small{ color:#6b7280; margin-bottom:16px; }
+.url-card textarea{ width:100%; padding:12px 14px; border-radius:12px; border:1px solid #d1d5db; background:#f9fafb; resize:none; font-size:15px; }
+.url-card textarea:focus{ outline:none; border-color:#0a66c2; box-shadow:0 0 0 3px rgba(10,102,194,0.08); background:#fff; }
+.url-card .btn{ width:100%; margin-top:14px; padding:12px; border-radius:10px; background:#0a66c2; color:#fff; border:none; font-weight:600; cursor:pointer; }
+.error-text{ color:crimson; margin-top:10px; font-weight:600; }

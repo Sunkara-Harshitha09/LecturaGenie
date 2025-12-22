@@ -1,0 +1,240 @@
+:root {
+  --primary: #0a66c2;
+  --accent: #2b6cb0;
+  --bg-gradient: linear-gradient(135deg, #eaf3ff 0%, #ffffff 100%);
+  --card: #ffffff;
+  --muted: #6b7280;
+  --text: #1a1a1a;
+  --border: #e5e7eb;
+  --shadow: 0 6px 18px rgba(16, 24, 40, 0.06);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: Inter, system-ui, Arial, sans-serif; }
+body { background: var(--bg-gradient); color: var(--text); min-height: 100vh; }
+
+.app-root { display: flex; flex-direction: column; min-height: 100vh; }
+
+/* Navbar */
+.navbar {
+  background: var(--card);
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 14px 24px; box-shadow: var(--shadow); position: sticky; top: 0; z-index: 10;
+}
+.brand { font-weight: 700; color: var(--primary); font-size: 1.3rem; letter-spacing: 0.3px; }
+.nav-links a { margin-left: 16px; text-decoration: none; color: var(--text); font-weight: 500; transition: color .15s; }
+.nav-links a:hover { color: var(--primary); }
+.btn { padding: 10px 14px; border-radius: 8px; background: var(--primary); color: #fff; border: none; font-weight:600; cursor:pointer; }
+.btn:hover { background: var(--accent); }
+
+/* Hero */
+.hero { text-align: center; padding: 48px 20px 24px; }
+.hero h1 { font-size: 1.9rem; color: var(--primary); margin-bottom: 8px; }
+.hero p { color: var(--muted); font-size: 1rem; }
+
+/* Container & Card */
+.container { flex: 1; max-width: 960px; margin: 20px auto; padding: 16px; width: 100%; }
+.card { background: var(--card); padding: 22px; border-radius: 12px; box-shadow: var(--shadow); border: 1px solid var(--border); margin-bottom: 20px; }
+
+/* Forms */
+.form-group { margin-bottom: 14px; display:flex; flex-direction:column; }
+label { font-size: 14px; margin-bottom: 6px; color: var(--muted); }
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  padding: 12px; border: 1px solid var(--border); border-radius: 8px; font-size: 15px; outline:none; background:#fff;
+}
+input:focus, textarea:focus { border-color: var(--primary); box-shadow: 0 0 0 4px rgba(10,102,194,0.06); }
+
+/* Footer */
+.footer { text-align:center; padding:18px; background: var(--card); box-shadow: 0 -1px 6px rgba(0,0,0,0.05); color: var(--muted); font-size:14px; }
+.small { font-size: 13px; color: var(--muted); }
+
+
+/* ============================================
+   Create Account Page (Register Page) Styling
+   ============================================ */
+
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eaf3ff 0%, #ffffff 100%);
+}
+
+.register-card {
+  background: #ffffff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  padding: 32px;
+  width: 100%;
+  max-width: 420px;
+  border: 1px solid #e5e7eb;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.register-card h2 {
+  color: #0a66c2;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.register-card p.small {
+  text-align: center;
+  color: #6b7280;
+  margin-bottom: 24px;
+  font-size: 0.95rem;
+}
+
+.register-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.register-card label {
+  font-size: 0.9rem;
+  color: #374151;
+  margin-bottom: 4px;
+}
+
+.register-card input[type="text"],
+.register-card input[type="email"],
+.register-card input[type="password"] {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 15px;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.register-card input:focus {
+  border-color: #0a66c2;
+  box-shadow: 0 0 0 3px rgba(10, 102, 194, 0.1);
+}
+
+.btn {
+  background: #0a66c2;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.btn:hover {
+  background: #2563eb;
+}
+
+.register-card .small a {
+  color: #0a66c2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.register-card .small a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* =====================================
+   Upload URL Page — LecturaGenie Style
+   ===================================== */
+
+.url-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eaf3ff 0%, #ffffff 100%);
+}
+
+.url-card {
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  padding: 40px 32px;
+  width: 100%;
+  max-width: 520px;
+  border: 1px solid #e5e7eb;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.url-card h2 {
+  color: #0a66c2;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.url-card p.small {
+  color: #6b7280;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.url-card textarea {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  outline: none;
+  background: #f9fafb;
+  resize: none;
+  font-size: 15px;
+  line-height: 1.5;
+  transition: all 0.3s ease-in-out;
+}
+
+.url-card textarea:focus {
+  border-color: #0a66c2;
+  background: #ffffff;
+  box-shadow: 0 0 0 3px rgba(10, 102, 194, 0.1);
+}
+
+.url-card .btn {
+  background: #0a66c2;
+  color: white;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  margin-top: 14px;
+  width: 100%;
+  transition: background 0.3s ease-in-out;
+}
+
+.url-card .btn:hover {
+  background: #2563eb;
+}
+
+.error-text {
+  color: crimson;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
