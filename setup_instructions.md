@@ -42,7 +42,7 @@ npm run dev
 
 Open your browser and go to:
 
-http://localhost:5173
+https://lecturagenie-ai.base44.app
 
 ## 7. How to Use the Application
 
