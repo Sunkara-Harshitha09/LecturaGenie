@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+transformers
+torch
+youtube-transcript-api
+pandas
+numpy
+scikit-learn
+nltk
+python-multipart
+requests
